@@ -10,11 +10,11 @@ spec:
 template:
    metadata:
    label:
-         app: myvertexpod
-         Version: 2.6.2
+       app: myvertexpod
+       Version: 2.6.2
    spec:
        containers:
           - name: mynginx
-            image: nginx
+            image: nginxs
             ports:
             - containerPort: 80
