@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-   name: myvertexRC
+   name: myvertex_RC
 spec:
    replicas: 3
    selector:
@@ -12,9 +12,9 @@ spec:
        label:
          app: myvertexpod
          Version: 2.6.2
-     spec:
+   spec:
        containers:
-       - name: mynginx
-         image: nginx
-         ports:
-          - containerPort: 80
+         - name: mynginx
+           image: nginx
+           ports:
+           - containerPort: 80
