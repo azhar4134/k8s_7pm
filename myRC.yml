@@ -7,13 +7,13 @@ spec:
    selector:
     app: myvertexpod
     Version: 2.6.2
-template:
-   metadata:
-   label:
-      app: myvertexpod
-      Version: 2.6.2
-   spec:
-      containers:
+   template:
+     metadata:
+       label:
+         app: myvertexpod
+         Version: 2.6.2
+     spec:
+       containers:
        - name: mynginx
          image: nginx
          ports:
