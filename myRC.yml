@@ -15,6 +15,6 @@ template:
    spec:
        containers:
           - name: mynginx
-            image: nginxs
+            image: nginx
             ports:
-            - containerPort: 80
+            - containerPort: 80 
