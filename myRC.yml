@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
    name: myvertex_rc
-spec:
+   spec:
    replicas: 3
    selector:
      app: mynginx
@@ -12,7 +12,7 @@ spec:
       label:
          app: mynginx
          Version: 2.6.2
-   spec:
+     spec:
       containers:
       - name: mynginx_container
         image: nginx
