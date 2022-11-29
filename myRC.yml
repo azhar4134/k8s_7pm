@@ -10,7 +10,7 @@ spec:
    template:
      metadata:
        label:
-          apps: myazharapp
+          app: myazharapp
           version: 2.6.2
      spec:
         containers:
