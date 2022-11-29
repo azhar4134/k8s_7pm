@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-   name: myvertex_rc
-   spec:
+  name: vertex-rc
+spec:
    replicas: 3
-   selector:
-     app: mynginx
-     Version: 2.6.2
-   template:
+   selector: 
+     app: myvertexapp
+     version: 2.6.2
+   template:                                     
      metadata:
-      label:
-         app: mynginx
-         Version: 2.6.2
+       labels:
+          app: myvertexapp
+          version: 2.6.2
      spec:
-      containers:
-      - name: mynginx_container
-        image: nginx
-        ports:
-            - containerPort: 80 
+        containers:
+        - name: mynginx
+          image: nginx
+          ports: 
+          - containerPort: 80
