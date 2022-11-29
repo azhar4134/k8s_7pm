@@ -9,7 +9,7 @@ spec:
      version: 2.6.2
    template:
      metadata:
-       label:
+       labels:
           app: myazharapp
           version: 2.6.2
      spec:
