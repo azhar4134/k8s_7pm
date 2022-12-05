@@ -15,7 +15,7 @@ spec:
      spec:
         containers:
         - name: myazharapp-container
-          image: shaikhazhar/myjavaapp:1
+          image: shaikhazhar/myjawaimage1:1
           ports:
           - containerPort: 8080
 
